@@ -1,0 +1,157 @@
+html{font-size:62.5%;}
+body {font:normal 0% Arial,sans-serif;font-size:14px; font-size:1.4rem;background-color: #f6f6f6 ;
+/* background: radial-gradient(circle, rgb(245, 245, 220), rgb(234, 244, 247)); */
+} 
+
+.head-wrap{
+    width:1300px;
+    overflow: hidden;
+    /* height: 15rem; */
+    height: 10rem;
+    line-height: 7rem;
+    text-align: center;margin: 0 auto;
+    /* background-color: #96b97d; */
+    background-color: #090723;
+    color: #fff;
+    /* background: url(../images/head-bg.jpg) 0 0 no-repeat; */
+    background-size: 100%;
+    position: relative;
+}
+
+.content-wrap{
+    width:1300px;
+    overflow: hidden;
+    margin: 5px auto;
+    /* border: 3px solid #c3c3c3; */
+    position: relative;
+    overflow: hidden;
+}
+.content-wrap .left{
+    width: 14%;
+    float: left;
+    min-height: 800px;
+    border: 1px solid #eaeaea;
+}
+
+.content-wrap .right{
+    width: 14%;
+    float: left;
+    min-height: 800px;
+    border: 1px solid #eaeaea;
+}
+.content-wrap .content{
+    /* width: 68%; */
+    width: 1100px;
+    margin-left: 10px;
+    float: left;
+    min-height: 800px;
+    /* border: 3px solid seashell; */
+    /* background-image: url('http://94.191.16.51/images/bg.jpg');     
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+    /* margin: 0 1%; */
+}
+
+.chat-block{
+    width: 58px;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    cursor: pointer;
+    /* color: #ff720d; */
+}
+
+.chat-wrap{
+    width:548px; 
+    /* height:421;  */
+    background-color:#2e3238; 
+    padding:4px; position:fixed; z-index:11;display:none; top: 120px;
+    left: 35%;right: 35%;
+    border: 1px solid #546B51;
+}
+.chat-wrap .title{color: #fff;padding: 3px 0 6px;cursor: pointer;}
+.chat-wrap .top{
+    /* width: 99.5%; */
+    padding: 15px;
+    height: 360px;
+    border: 2px solid #2e3238;
+    overflow-y: auto;
+    background-color: #eee;
+}
+.chat-wrap .top span{
+    display: block;
+    padding: 5px 20px;
+    word-break: break-all;
+    line-height: 2;
+}
+
+.chat-wrap .top .replytxt{
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    max-width: calc(100% - 80px);
+    min-height: 30px;
+    line-height: 2.5;
+    font-size: 12px;
+    text-align: left;
+    word-break: break-all;
+    background-color: #fafafa;
+    border-radius: 4px;
+}
+.myreplay{
+    background-color: #b2e281 !important;
+    text-align: right;
+}
+.myicon{
+    background-image: url(https://drea.cc/uc_server/images/noavatar_middle.gif);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    vertical-align: -10px;
+    margin: 0 0 0 6px;
+}
+.xticon{
+    background-image: url(https://drea.cc/uc_server/data/avatar/000/00/00/02_avatar_middle.jpg);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    border-radius: 50%;
+    vertical-align: -10px;
+    margin: 0 6px 0 0;
+}
+
+.chat-wrap .bottom{
+    /* width: 99.5%; */
+    height: 120px;
+    border: 2px solid #2e3238;
+}
+.chat-wrap .bottom textarea[_v-1bce8966] {
+    padding: 10px;
+    height: 83%;
+    width: 96%;
+    border: none;
+    outline: none;
+    font-family: Micrsofot Yahei;
+    resize: none;
+}
+
+/* 顶部导航 */
+a{text-decoration-line: none;}  
+ul,li{list-style: none;}
+.head-wrap .nav {width: 52%;overflow: hidden;}
+.head-wrap .nav .level>li{float: left;width: 16.66%;text-align: center;font-size: 18px;transition: .4s;}
+.head-wrap .nav .level>li a{color: #fff;}
+.head-wrap .nav .level>li a:hover{color: #5f705d;}
+.head-wrap .nav .level>li:hover{color: #5f705d;}  
+
+.head-wrap .nav .two{display: none;margin-top: 10px;}  
+.head-wrap .nav .level>li:hover .two{display: block;}   
+.head-wrap .nav .two li{padding: 5px 0;transition: .4s;cursor: pointer;color: skyblue;}
+.head-wrap .nav .two li:hover{background: pink;}
+
+.head-wrap .head-right{position: absolute;top: 1rem;right: 5.5rem;display: flex;}
+.head-wrap .head-right .to-login{background: url('../images/icon_boss.png') no-repeat;display: block;background-size: 100% 100%;width: 16px;height: 16px;margin-top: 26px;}
+.head-wrap .head-right .t{font-size: 1.4rem;margin-left: 2px;cursor: pointer;}

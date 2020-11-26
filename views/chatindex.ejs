@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="600" />
+    <script src="/static/js/jquery.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
+    <link rel="stylesheet" href="/static/css/default.css">
+    <link rel="stylesheet" href="/static/highlight/monokai-sublime.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/wrap.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/lefttree.css">
+</head>
+
+<body>
+    <div id="chat" class="chat-wrap" style="display: block">
+        <div id="closeChat">关闭</div>
+        <div id="chatlist" class="top"></div>
+        <div class="bottom">
+            <textarea placeholder="按 Enter 发送" _v-1bce8966="" id="txtmsg"></textarea>
+        </div>
+    
+    </div>
+</body>
+
+</html>
+
+<!-- <script src="/static/js/common.js"></script> -->
+
+
+<script>
+    var pathUrl = window.location.origin;
+    function testChat(val) {
+            $.ajax({
+                url: pathUrl + "/chatInfo?key=" + val,
+                type: 'get',
+                success: function (msg) {
+                    console.log(msg);
+                    var reply = msg.backInfo.reply;
+                    reply = reply ? reply : '走丢了~~~';
+                    var $span = '<span>小兔：' + reply + '</span>';
+                    $('#chatlist').append($span);
+                    document.getElementById("txtmsg").value = '';
+                    var div = document.getElementById('chatlist');
+                    div.scrollTop = div.scrollHeight;  //控制最新的消息始终在底部
+                },
+                error: function (err) {
+
+                }
+            })
+        }
+
+        function keydownMsg(evt) {
+            evt = (evt) ? evt : ((window.event) ? window.event : "");
+            keyCode = evt.keyCode ? evt.keyCode : (evt.which ? evt.which : evt.charCode);
+            if (keyCode == 13) {
+                var val = document.getElementById("txtmsg").value;
+                var $min = '<span style="text-align: right;">' + val + ':我</span>';
+                $('#chatlist').append($min);
+                testChat(val);
+                //alert(document.getElementById("txtmsg").value);//回车键弹出文本框信息
+            }
+        }
+
+        $('#txtmsg').on("keydown", keydownMsg);
+
+        $('.chat-block').on('click', function () { $('#chat').css({ 'display': 'block' }) });
+        $('#closeChat').on('click', function () { $('#chat').css({ 'display': 'none' }) });
+</script>

@@ -1,0 +1,37 @@
+<div class="right-wrap">
+    <div class="hot-wrap">
+        <div class="columname">-热门文章</div>
+        <div class="hotitems">
+            <%for(var i=0;i< hotarticles.length;i++){%>
+            <div class="item">
+                <a href="<%=hotarticles[i].url %>" target="_blank">
+                    <img src="<%=hotarticles[i].images[0] %>" alt="">
+                    <div class="cont" style="max-width: 145px;">
+                        <div class="desc ep2"><%=hotarticles[i].title %></div>
+                        <div class="time"><%=hotarticles[i].publishedAt %></div>
+                    </div>
+                </a>
+            </div>
+            <%}%>
+
+            </div>
+        </div>
+
+        <div class="hot-wrap">
+            <div class="columname">-精选新闻</div>
+            <div class="hotitems">
+                <%for(var i=0;i< hotnews.length;i++){%>
+                <div class="item">
+                    <a href="<%=hotnews[i].url %>" target="_blank">
+                        <!-- <img src="<%=hotnews[i].imgsrc %>" alt=""> -->
+                        <div class="cont">
+                            <div class="desc ep2"><%=hotnews[i].title %></div>
+                            <div class="time"><%=hotnews[i].lmodify %></div>
+                        </div>
+                    </a>
+                </div>
+                <%}%>
+            </div>
+        </div>
+        
+    </div>

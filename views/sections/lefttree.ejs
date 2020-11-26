@@ -1,0 +1,41 @@
+
+<script> 
+  var initdata = <%- JSON.stringify(treelist) %>   
+</script>
+
+<ol class="tree">
+  <%if(treelist && treelist.list1.length>0){ %>
+      <%for(var i=0,firstlevel=treelist.list1;i < treelist.list1.length;i++){%>
+        <li>
+          <label for="<%=firstlevel[i].folderid%>" class="folderOne"><i class="icons"></i><span class="txt"><%=firstlevel[i].name%></span></label> <input
+            type="checkbox" id="<%=firstlevel[i].folderid%>" />
+            <%if(firstlevel[i].child && firstlevel[i].child.length>0){%>
+            <ol>
+              <%for(var j=0,secondlevel=firstlevel[i].child;j < firstlevel[i].child.length;j++){%>
+                  <li class="file folderTwo">
+
+                    <%if(secondlevel[j].url!='#'){%>
+                        <a class="secondurl" href="<%=secondlevel[j].url%>" target="_blank">
+                          <label for="<%=secondlevel[j].folderid%>" class="folderTwo"><%=secondlevel[j].name%></label> <input type="checkbox"
+                            id="<%=secondlevel[j].folderid%>" />
+                        </a>
+                    <%} else {%>
+                          <label for="<%=secondlevel[j].folderid%>" class="folderTwo"><%=secondlevel[j].name%></label> <input type="checkbox"
+                            id="<%=secondlevel[j].folderid%>" />
+                    <%}%>
+                    
+                      <%if(secondlevel[j].child && secondlevel[j].child.length>0){%>
+                        <ol>
+                          <%for(var k=0,thirdlevel=secondlevel[j].child;k < secondlevel[j].child.length;k++){%>
+                              <li class="file folderThree"><a href="<%=thirdlevel[k].url%>" target="_blank">-<%=thirdlevel[k].name%></a></li>
+                          <%}%>
+                        </ol>
+                      <%}%>
+                  </li>
+              <%}%>
+            </ol>
+            <%}%>
+        </li>
+      <%}%>
+  <% }%>
+</ol>

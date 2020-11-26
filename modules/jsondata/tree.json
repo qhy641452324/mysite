@@ -1,0 +1,181 @@
+{
+  "list1": [
+    {
+      "name": "常用网站",
+      "url": "#",
+      "folderid":"folder1",
+      "child": [
+        {
+          "name":"MDN",
+          "url":"https://developer.mozilla.org/zh-CN/",
+          "child":[]
+        },
+        {
+          "name": "DogDog",
+          "url": "https://www.dogedoge.com/",
+          "child": []
+        },
+        {
+          "name": "reactjs",
+          "url": "https://reactjs.bootcss.com/tutorial/tutorial.html",
+          "child": []
+        },
+        {
+          "name": "segmentfault",
+          "url": "https: //segmentfault.com/",
+          "child": []
+        },
+        {
+          "name": "MDN",
+          "url": "https://developer.mozilla.org/zh-CN/",
+          "child": []
+        }
+      ]
+    },
+    {
+      "name": "常用API",
+      "url": "#",
+      "folderid": "folder2",
+      "child": [
+        {
+          "name": "typescript",
+          "url": "https://www.tslang.cn/docs/home.html",
+          "child": []
+        },
+        {
+          "name": "jquery",
+          "url": "https://jquery.cuishifeng.cn/",
+          "child": []
+        },
+        {
+          "name": "webpack",
+          "url": "https://webpack.js.org/configuration/configuration-types/#exporting-multiple-configurations",
+          "child": []
+        },
+        {
+          "name": "lodash",
+          "url": "https://www.lodashjs.com/",
+          "child": []
+        },
+        {
+          "name": "node中文网",
+          "url": "http://nodejs.cn/api/",
+          "child": []
+        },
+        {
+          "name": "vue2.0",
+          "url": "https://vuejs.bootcss.com/api/",
+          "child": []
+        },
+        {
+          "name": "现代javascript教程",
+          "url": "https://zh.javascript.info/"
+        },
+        {
+          "name": "es6",
+          "url": "https://es6.ruanyifeng.com/#docs/proxy"
+        },
+        {
+          "name": "nuxtjs",
+          "url": "https://zh.nuxtjs.org/docs/2.x/concepts/nuxt-lifecycle/"
+        }
+      ]
+    },
+    {
+      "name": "我的模块",
+      "url": "#",
+      "folderid": "folder3",
+      "child": [
+        {
+          "name": "我的开发",
+          "url": "#",
+          "folderid": "folder31",
+          "child": [
+            {
+              "name": "代码分享",
+              "url": "../share"
+            },
+            {
+              "name": "我的代码",
+              "url": "../codes/5"
+            }
+          ]
+        },
+        {
+          "name": "我的收藏",
+          "url": "#",
+          "folderid": "folder32",
+          "child": [
+            {
+              "name": "书籍",
+              "url": "https://www.ituring.com.cn/book/"
+            },
+            {
+              "name": "进阶资料",
+              "url": "https://github.com/yygmind/blog/labels/%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97"
+            },
+            {
+              "name": "面试题及答案",
+              "url": "https: //segmentfault.com/a/1190000004071610"
+            },
+            {
+              "name": "前端必读",
+              "url": "https://segmentfault.com/a/1190000019865902"
+            },
+            {
+              "name": "vue源码解读",
+              "url": "https://github.com/answershuto/learnVue"
+            },
+            {
+              "name": "linux命令大全",
+              "url": "https://ipcmen.com/nano",
+              "child": []
+            },
+            {
+              "name": "reactjs",
+              "url": "https://reactjs.bootcss.com/tutorial/tutorial.html",
+              "child": []
+            },
+            {
+              "name":"浏览器工作原理",
+              "url":"https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/",
+              "child":[]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "常用工具",
+      "url": "#",
+      "folderid": "folder4",
+      "child": [
+        {
+          "name": "IP查询",
+          "url": "https://www.ip138.com/",
+          "child": []
+        },
+        {
+          "name": "在线抠图",
+          "url": "https://koutu.gaoding.com/",
+          "child": []
+        },
+        {
+          "name": "css三角形生成器",
+          "url": "https://www.dute.org/css-arrow",
+          "child": []
+        },
+        {
+          "name": "encodeurl",
+          "url": "https://www.sojson.com/encodeurl.html",
+          "child": []
+        },
+        {
+          "name": "内部工具库",
+          "url": "http://172.16.58.95:605/",
+          "child": []
+        }
+      ]
+    }
+  ]
+}

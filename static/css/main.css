@@ -1,0 +1,66 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+     
+}
+
+
+a {
+  cursor:pointer;
+  color: #484848;
+}
+
+.left .timeBox{
+    text-align: center;
+    font-size: 13px;
+    margin: 5px auto;
+    height: 28px;line-height: 28px;
+}
+
+#scrollDiv {
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #fff;
+  color: #999999;
+  /* margin: 1rem auto; */
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#scrollBegin,
+#scrollEnd {
+  display: inline;
+}
+.scrollBox .sctxt{color: #999999;padding: 0 10px 0 0;}
