@@ -44,8 +44,8 @@ else {
 
 // const redis = require('redis');
 // var RDS_PORT = 6379,        //端口号
-//     RDS_HOST = '94.191.16.51',    //服务器IP
-//     RDS_PWD = 'qhy641452324',    //密码    
+//     RDS_HOST = '******',    //服务器IP
+//     RDS_PWD = '8888',    //密码    
 //     RDS_OPTS = {},            //设置项
 //     client = redis.createClient(RDS_PORT, RDS_HOST, RDS_OPTS);
 
